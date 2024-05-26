@@ -99,66 +99,70 @@ export const ContactUs = () => {
               <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
                 {contactConfig.YOUR_EMAIL}
               </a>
-              <br />
-              <br />
+              <br/>
+              <strong>Instagram:</strong>{" "}
+              <a href={`${contactConfig.INS_LINK}`}>
+                {contactConfig.INS}
+              </a>
+              <br/>
               {contactConfig.hasOwnProperty("YOUR_FONE") ? (
-                <p>
-                  <strong>Phone:</strong> {contactConfig.YOUR_FONE}
-                </p>
+                  <p>
+                    <strong>Phone:</strong> {contactConfig.YOUR_FONE}
+                  </p>
               ) : (
-                ""
+                  ""
               )}
             </address>
             <p>{contactConfig.description}</p>
           </Col>
-          <Col lg="7" className="d-flex align-items-center">
-            <form onSubmit={handleSubmit} className="contact__form w-100">
-              <Row>
-                <Col lg="6" className="form-group">
-                  <input
-                    className="form-control"
-                    id="name"
-                    name="name"
-                    placeholder="Name"
-                    value={formData.name || ""}
-                    type="text"
-                    required
-                    onChange={handleChange}
-                  />
-                </Col>
-                <Col lg="6" className="form-group">
-                  <input
-                    className="form-control rounded-0"
-                    id="email"
-                    name="email"
-                    placeholder="Email"
-                    type="email"
-                    value={formData.email || ""}
-                    required
-                    onChange={handleChange}
-                  />
-                </Col>
-              </Row>
-              <textarea
-                className="form-control rounded-0"
-                id="message"
-                name="message"
-                placeholder="Message"
-                rows="5"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              ></textarea>
-              <br />
-              <Row>
-                <Col lg="12" className="form-group">
-                  <button className="btn ac_btn" type="submit">
-                    {formData.loading ? "Sending..." : "Send"}
-                  </button>
-                </Col>
-              </Row>
-            </form>
-          </Col>
+          {/*<Col lg="7" className="d-flex align-items-center">*/}
+          {/*  <form onSubmit={handleSubmit} className="contact__form w-100">*/}
+          {/*    <Row>*/}
+          {/*      <Col lg="6" className="form-group">*/}
+          {/*        <input*/}
+          {/*          className="form-control"*/}
+          {/*          id="name"*/}
+          {/*          name="name"*/}
+          {/*          placeholder="Name"*/}
+          {/*          value={formData.name || ""}*/}
+          {/*          type="text"*/}
+          {/*          required*/}
+          {/*          onChange={handleChange}*/}
+          {/*        />*/}
+          {/*      </Col>*/}
+          {/*      <Col lg="6" className="form-group">*/}
+          {/*        <input*/}
+          {/*          className="form-control rounded-0"*/}
+          {/*          id="email"*/}
+          {/*          name="email"*/}
+          {/*          placeholder="Email"*/}
+          {/*          type="email"*/}
+          {/*          value={formData.email || ""}*/}
+          {/*          required*/}
+          {/*          onChange={handleChange}*/}
+          {/*        />*/}
+          {/*      </Col>*/}
+          {/*    </Row>*/}
+          {/*    <textarea*/}
+          {/*      className="form-control rounded-0"*/}
+          {/*      id="message"*/}
+          {/*      name="message"*/}
+          {/*      placeholder="Message"*/}
+          {/*      rows="5"*/}
+          {/*      value={formData.message}*/}
+          {/*      onChange={handleChange}*/}
+          {/*      required*/}
+          {/*    ></textarea>*/}
+          {/*    <br />*/}
+          {/*    <Row>*/}
+          {/*      <Col lg="12" className="form-group">*/}
+          {/*        <button className="btn ac_btn" type="submit">*/}
+          {/*          {formData.loading ? "Sending..." : "Send"}*/}
+          {/*        </button>*/}
+          {/*      </Col>*/}
+          {/*    </Row>*/}
+          {/*  </form>*/}
+          {/*</Col>*/}
         </Row>
       </Container>
       <div className={formData.loading ? "loading-bar" : "d-none"}></div>
