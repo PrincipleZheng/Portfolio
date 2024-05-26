@@ -16,7 +16,7 @@ const introdata = {
         "Concentration: Stage Properties"
     ],
     // description2: "Concentration ：Stage Properties",
-    your_img_url: "https://img2.imgtp.com/2024/05/26/pVZUbsRZ.jpg",
+    your_img_url: "https://github.com/PrincipleZheng/Portfolio/blob/master/src/assets/images/312641716735525_.pic.jpg?raw=true",
 };
 
 const dataabout = {

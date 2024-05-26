@@ -96,12 +96,12 @@ export const ContactUs = () => {
             <h3 className="color_sec py-4">Get in touch</h3>
             <address>
               <strong>Email:</strong>{" "}
-              <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
+              <a href={`mailto:${contactConfig.YOUR_EMAIL}`} className="contact-link">
                 {contactConfig.YOUR_EMAIL}
               </a>
               <br/>
               <strong>Instagram:</strong>{" "}
-              <a href={`${contactConfig.INS_LINK}`}>
+              <a href={`${contactConfig.INS_LINK}`} className="contact-link">
                 {contactConfig.INS}
               </a>
               <br/>

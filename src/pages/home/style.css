@@ -7,6 +7,17 @@ section {
     transition: all .5s ease-in;
 }
 
+.large-title {
+    font-size: 70px; /* 或更大，根据你的设计需求 */
+    font-weight: bold;
+}
+
+.description-text {
+    font-size: 27px; /* 设置为你需要的大小 */
+    font-family: "Times New Roman";
+}
+
+
 .who_am_I {
     font-family: Cinzel;
 }
