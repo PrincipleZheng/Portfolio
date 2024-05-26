@@ -28,7 +28,7 @@ section {
 
 .btn-portfolio {
     background: var(--primary-color);
-    border-radius: 0;
+    border-radius: 10%;
 }
 
 .btn-portfolio a {
@@ -110,6 +110,7 @@ section {
 }
 
 .ac_btn {
+    font-size: 23px;
     padding: 4px 19px;
     color: var(--secondary-color);
     position: relative;

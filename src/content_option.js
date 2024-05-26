@@ -12,11 +12,12 @@ const introdata = {
         // third: "I develop mobile apps",
     },
     description: [
+        "Sophomore at UNCSA",
         "Arts discipline: Design and Production",
         "Concentration: Stage Properties"
     ],
     // description2: "Concentration ：Stage Properties",
-    your_img_url: "https://github.com/PrincipleZheng/Portfolio/blob/master/src/assets/images/312641716735525_.pic.jpg?raw=true",
+    your_img_url: "https://github.com/PrincipleZheng/Portfolio/blob/master/src/assets/red-umb.jpg?raw=true",
 };
 
 const dataabout = {

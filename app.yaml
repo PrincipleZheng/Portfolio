@@ -1,0 +1,15 @@
+runtime: nodejs20  # 确保这与你的 Node.js 版本一致
+
+env: standard
+
+handlers:
+  - url: /static
+    static_dir: build/static
+
+  - url: /(.*\.(json|ico|png|jpg|jpeg|svg))$
+    static_files: build/\1
+    upload: build/.*\.(json|ico|png|jpg|jpeg|svg)$
+
+  - url: /.*
+    static_files: build/index.html
+    upload: build/index.html

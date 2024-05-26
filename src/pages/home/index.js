@@ -25,6 +25,7 @@ export const Home = () => {
             <div className="align-self-center ">
               <div className="intro mx-auto">
                 <h2 className="large-title">{introdata.title}</h2>
+                <br/>
                 {introdata.description.map((line, index) => (
                     <p key={index} className="description-text">{line}</p>
                 ))}
